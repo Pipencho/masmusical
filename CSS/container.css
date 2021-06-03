@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Vollkorn+SC&display=swap');
+
+.poster2{
+    width: 100%;
+    height: 70vh;
+    background-image: url("img/banners/poster2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.contents{
+    width: 100%;
+    height: 35vh;  
+    margin: 0;  
+    padding: 0  ;
+}
+
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -60px;
+}
+
+.section .col{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section .col button{    
+    height: 33vh;
+    width: 50vh;
+    background-color: #df0209;      
+    margin: 40px;
+    border: none;    
+    border-radius: 15px 15px 15px 15px;
+    color: black;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 1.5em;
+}
+
+.col button:hover{
+    color: white;    
+    cursor: pointer;
+}
+
+.poster3{
+    width: 100%;
+    height: 60vh;
+    background-image: url("img/banners/banner3.jpg");
+    background-size: 100%;
+}
+
+.slider{
+    width: 100%;
+    height: 30vh;   
+    margin: 0;
+    padding: 0;
+    /* background-color: white; */
+    overflow-x: hidden;
+}
+
+.slider .rowslider{
+    display: flex;
+    width: 200%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    animation: slider 30s infinite;
+}
+
+.slider .rowslider .col-25{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.slider .rowslider .col-25:nth-child(1){
+    background-image: url("img/marcas/Casio_280x.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slider .rowslider .col-25:nth-child(2){
+    background-image: url("img/marcas/dw-drums_280x.png");
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider .rowslider .col-25:nth-child(3){
+    background-image: url("img/marcas/epiphone.png");
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider .rowslider .col-25:nth-child(4){
+    background-image: url("img/marcas/fender_280x.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider .rowslider .col-25:nth-child(5){
+    background-image: url("img/marcas/gibson_280x.png");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider .rowslider .col-25:nth-child(6){
+    background-image: url("img/marcas/hohner_280x.png");
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider .rowslider .col-25:nth-child(7){
+    background-image: url("img/marcas/ibanez.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slider .rowslider .col-25:nth-child(8){
+    background-image: url("img/marcas/tama.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slider .rowslider .col-25:nth-child(9){
+    background-image: url("img/marcas/zoom_280x.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider .rowslider .col-25:nth-child(10){
+    background-image: url("img/marcas/yamaha.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@keyframes slider{
+    50%{
+        margin-left: -100%;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 768px){
+    .poster2{
+        height: 40vh;
+    }
+
+    .section .col button{    
+        height: 18vh;
+        width: 25vh;
+        font-size: 1em;
+    }
+
+    .contents{
+        height: 20vh;
+    }
+
+    .poster3{
+        height: 30vh;
+    }
+}
+
+@media(max-width: 480px){
+    .contents{
+        height: 63vh;
+        width: 100%;
+    }
+    
+    .section{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: -15px;
+    }
+
+    .section .col button{
+        height: 20vh;
+        width: 50%;
+        margin: 5px;
+        font-size: 1.3rem;
+    }
+}
